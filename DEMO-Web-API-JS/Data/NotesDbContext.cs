@@ -9,6 +9,6 @@ namespace DEMO_Web_API_JS.Data
         {
         }
 
-        DbSet<Note> Notes { get; set; }
+        public DbSet<Note> Notes { get; set; }
     }
 }
