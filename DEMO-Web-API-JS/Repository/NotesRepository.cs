@@ -15,13 +15,15 @@ namespace DEMO_Web_API_JS.Repository
             _context = context;
         }
 
-        public async Task AddNote(Note note)
+        public async Task<Note> AddNote(Note note)
         {
             if (note != null)
             {
                 await _context.AddAsync(note);
                 await _context.SaveChangesAsync();
+                return note;
             }
+            return note;
 
         }
 

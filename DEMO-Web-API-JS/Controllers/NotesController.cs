@@ -52,8 +52,8 @@ namespace DEMO_Web_API_JS.Controllers
             else
             {
                 note.Id = new Guid();
-                await _notesRepository.AddNote(note);
-                return Created();
+                var addedNote =  await _notesRepository.AddNote(note);
+                return CreatedAtAction(nameof(GetNoteById),new {id=note.Id },note);
             }
         }
 

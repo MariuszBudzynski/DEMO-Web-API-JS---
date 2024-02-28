@@ -6,7 +6,7 @@ namespace DEMO_Web_API_JS.Repository.Interfaces
     {
         Task<IEnumerable<Note>> GetAllNotes();
         Task<Note> GetNoteById(Guid id);
-        Task AddNote(Note note);
+        Task <Note>AddNote(Note note);
         Task UpdateNote(Guid id,Note note);
         Task DeleteNote(Guid id);
 
