@@ -1,6 +1,6 @@
 @DEMO_Web_API_JS_HostAddress = http://localhost:5238
 
-GET {{DEMO_Web_API_JS_HostAddress}}/weatherforecast/
-Accept: application/json
+# GET {{DEMO_Web_API_JS_HostAddress}}/weatherforecast/
+# Accept: application/json
 
-###
+# ###
