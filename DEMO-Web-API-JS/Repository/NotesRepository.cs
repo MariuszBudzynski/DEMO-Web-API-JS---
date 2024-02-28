@@ -2,7 +2,6 @@
 using DEMO_Web_API_JS.Models;
 using DEMO_Web_API_JS.Repository.Interfaces;
 using Microsoft.EntityFrameworkCore;
-using static Azure.Core.HttpHeader;
 
 namespace DEMO_Web_API_JS.Repository
 {

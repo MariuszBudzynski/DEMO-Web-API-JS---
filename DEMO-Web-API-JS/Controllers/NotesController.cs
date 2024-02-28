@@ -1,7 +1,5 @@
 ﻿using DEMO_Web_API_JS.Models;
-using DEMO_Web_API_JS.Repository;
 using DEMO_Web_API_JS.Repository.Interfaces;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.IdentityModel.Tokens;
 
