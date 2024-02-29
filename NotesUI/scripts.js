@@ -9,6 +9,11 @@ saveButton.addEventListener("click", function () {
   addNote(titleInput.value, descriptionIput.value);
 });
 
+function clearForm() {
+  titleInput.value = "";
+  descriptionIput.value = "";
+}
+
 //function that talks to API
 function addNote(title, description) {
   //body request
@@ -27,19 +32,25 @@ function addNote(title, description) {
     },
   })
     .then((data) => data.json()) //After receiving the response from the server, this line of code converts the response body into JSON format
-    .then((response) => console.log(response));
+    .then(() => {
+      clearForm();
+      getAllNotes();
+    });
 }
 
 //function will generate the HTML code on front
 function displayNotes(notes) {
+  let notesToUpdate = "";
+
   notes.forEach((note) => {
     const noteElemnt = `
     <div class="note">
     <h3>${note.title}</h3>
     <p>${note.description}</p>
   </div>`;
-    notesContainer.innerHTML += noteElemnt;
+    notesToUpdate += noteElemnt;
   });
+  notesContainer.innerHTML = notesToUpdate;
 }
 
 function getAllNotes() {
