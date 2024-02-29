@@ -1,0 +1,24 @@
+/*universal selector - every element on the page*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/*body selector*/
+body {
+  width: 100%;
+  height: 100vh;
+}
+
+/*custom classes*/
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.notes_sidebar {
+  width: 400px;
+  height: 100vh;
+}
