@@ -16,9 +16,47 @@ body {
 .container {
   width: 100%;
   height: 100vh;
+  display: flex;
 }
 
 .notes_sidebar {
   width: 400px;
   height: 100vh;
+  border-right: 2px solid #ccc;
+}
+
+.notes_container {
+  padding: 50px;
+  flex: 1;
+}
+
+.note {
+  background-color: #eee;
+  padding: 50px;
+}
+
+/*styling elements in a class*/
+.notes_sidebar input {
+  width: 400px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  padding: 10px;
+}
+
+.notes_sidebar textarea {
+  width: 400px;
+  margin-bottom: 6px;
+  font-size: 13px;
+  padding: 10px;
+  max-width: 100%;
+}
+
+.notes_sidebar button {
+  margin-bottom: 6px;
+  outline: none;
+  border: none;
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 3px;
 }
