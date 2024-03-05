@@ -10,5 +10,11 @@ namespace DEMO_Web_API_JS.Data
         }
 
         public DbSet<Note> Notes { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder model) {
+
+            //Fluent API configuration
+            model.Entity<Note>().HasKey(e => e.Id);
+        }
     }
 }
